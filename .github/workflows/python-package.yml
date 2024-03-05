@@ -22,6 +22,18 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Echo stuff
+      run: |
+        echo "PYTHONPATH: $PYTHONPATH"
+        echo "PYTHON: $PYTHON"
+        echo "PYTHON_VERSION: $PYTHON_VERSION"
+        echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+        echo "GITHUB_ACTION: $GITHUB_ACTION"
+        echo "GITHUB_ACTOR: $GITHUB_ACTOR"
+        echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+        echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
+        echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
+        echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
