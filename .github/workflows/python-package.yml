@@ -34,8 +34,7 @@ jobs:
         echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
         echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
         echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
-        /opt/hostedtoolcache/Python/3.11.8/x64/lib
-        /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/plothist/
+        echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
 
     - name: Install dependencies
       run: |
