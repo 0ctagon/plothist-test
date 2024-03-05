@@ -29,7 +29,7 @@ jobs:
         flit install
     - name: Copy documentation
       run: |
-        cp -r docs $GITHUB_WORKSPACE/docs
+        cp -r docs $PYTHONPATH/plothist-test/docs
     - name: Test with pytest
       run: |
         pytest
