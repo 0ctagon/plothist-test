@@ -27,12 +27,6 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         If the example or img folder does not exist, the function will raise a FileNotFoundError.
     """
 
-    # Print the content of the package folder
-    print("Package folder content:")
-    for root, dirs, files in os.walk(plothist.__path__[0]):
-        for file in files:
-            print(f"\t{root}/{file}")
-
     plothist_folder = (
         plothist.__path__[0]
         if os.environ.get("PLOTHIST_PATH") is None
@@ -59,7 +53,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
     python_files.sort()
 
     if no_input:
-        k_plots = "14"
+        k_plots = "all"
     else:
         # Ask which python files to relaunch
         print(
@@ -176,7 +170,10 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
             fail(
                 f"The following images have changed: {', '.join(changed_img)}. Please check the changes in the svg files and commit them if they are correct."
             )
-
+        if len(new_img_hashes) != len(img_hashes):
+            fail(
+                f"The number of images has changed. Please run `plothist_make_examples`, check the new images and commit them if they are correct. New images: {set(new_img_hashes.keys()) - set(img_hashes.keys())}"
+            )
 
 if __name__ == "__main__":
     make_examples()
