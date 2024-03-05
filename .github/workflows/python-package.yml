@@ -35,7 +35,6 @@ jobs:
         echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
         echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
         echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
