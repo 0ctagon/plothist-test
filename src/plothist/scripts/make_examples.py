@@ -107,7 +107,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         img_hashes = {}
         for file in os.listdir(img_folder):
             if file.endswith(".png"):
-                with open(os.path.join(img_folder, file), "r") as f:
+                with open(os.path.join(img_folder, file), "rb") as f:
                     bytes = f.read()
                     img_hashes[file] = hashlib.sha256(bytes).hexdigest()
 
@@ -161,7 +161,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         new_img_hashes = {}
         for file in os.listdir(img_folder):
             if file.endswith(".png"):
-                with open(os.path.join(img_folder, file), "r") as f:
+                with open(os.path.join(img_folder, file), "rb") as f:
                     bytes = f.read()
                     new_img_hashes[file] = hashlib.sha256(bytes).hexdigest()
 
