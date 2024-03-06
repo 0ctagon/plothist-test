@@ -108,7 +108,8 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         for file in os.listdir(img_folder):
             if file.endswith(".png"):
                 with open(os.path.join(img_folder, file), "r") as f:
-                    img_hashes[file] = hashlib.sha256(f.read()).hexdigest()
+                    bytes = f.read()
+                    img_hashes[file] = hashlib.sha256(bytes).hexdigest()
 
     # Iterate through all subfolders and files in the source folder
     for root, dirs, files in os.walk(example_folder):
@@ -161,7 +162,8 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         for file in os.listdir(img_folder):
             if file.endswith(".png"):
                 with open(os.path.join(img_folder, file), "r") as f:
-                    new_img_hashes[file] = hashlib.sha256(f.read()).hexdigest()
+                    bytes = f.read()
+                    new_img_hashes[file] = hashlib.sha256(bytes).hexdigest()
 
         # Check that the hashes are the same and print the ones that are different
         changed_img = []
