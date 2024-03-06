@@ -106,10 +106,9 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
     if check_svg:
         img_hashes = {}
         for file in os.listdir(img_folder):
-            if file.endswith(".png"):
-                with open(os.path.join(img_folder, file), "rb") as f:
-                    bytes = f.read()
-                    img_hashes[file] = hashlib.sha256(bytes).hexdigest()
+            if file.endswith(".svg"):
+                with open(os.path.join(img_folder, file), "r") as f:
+                    img_hashes[file] = hashlib.sha256(f.read().encode()).hexdigest()
 
     # Iterate through all subfolders and files in the source folder
     for root, dirs, files in os.walk(example_folder):
@@ -132,8 +131,6 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
                             "savefig(",
                             f"savefig({svg_metadata}, fname=",
                         )
-                    if ".svg" in line:
-                        line = line.replace(".svg", ".png")
                     file_code += line
 
             if print_code:
@@ -150,7 +147,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
 
     # Move the svg files to the img folder
     for file in os.listdir(temp_img_folder):
-        if file.endswith(".png"):
+        if file.endswith(".svg"):
             subprocess.run(["mv", os.path.join(temp_img_folder, file), img_folder])
 
     # Remove the temp folder
@@ -160,10 +157,9 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
     if check_svg:
         new_img_hashes = {}
         for file in os.listdir(img_folder):
-            if file.endswith(".png"):
-                with open(os.path.join(img_folder, file), "rb") as f:
-                    bytes = f.read()
-                    new_img_hashes[file] = hashlib.sha256(bytes).hexdigest()
+            if file.endswith(".svg"):
+                with open(os.path.join(img_folder, file), "r") as f:
+                    new_img_hashes[file] = hashlib.sha256(f.read().encode()).hexdigest()
 
         # Check that the hashes are the same and print the ones that are different
         changed_img = []
@@ -171,13 +167,13 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
             if img_hashes[file] != file_hash:
                 changed_img.append(file)
         if changed_img:
-            print("The following images have changed:", changed_img)
+            # print the content of the first changed file
+            with open(os.path.join(img_folder, changed_img[0]), "r") as f:
+                print(f"\n\n{changed_img[0]}:\n{f.read()}")
             fail(
                 f"The following images have changed: {', '.join(changed_img)}. Please check the changes in the svg files and commit them if they are correct."
             )
         if len(new_img_hashes) != len(img_hashes):
-            print(
-                f"The number of images has changed. Please run `plothist_make_examples`, check the new images and commit them if they are correct. New images: {set(new_img_hashes.keys()) - set(img_hashes.keys())}")
             fail(
                 f"The number of images has changed. Please run `plothist_make_examples`, check the new images and commit them if they are correct. New images: {set(new_img_hashes.keys()) - set(img_hashes.keys())}"
             )
