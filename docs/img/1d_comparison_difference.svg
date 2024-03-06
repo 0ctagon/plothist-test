@@ -416,7 +416,7 @@ L 6 0
      </g>
      <g id="text_1">
       <!-- $\mathdefault{0}$ -->
-      <g style="fill: #1a1a1a" transform="translate(55.88625 231.545475) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(55.88625 231.545475)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-30" d="M 2944 2048 
 C 2944 2560 2912 3072 2688 3546 
@@ -452,7 +452,7 @@ z
      </g>
      <g id="text_2">
       <!-- $\mathdefault{200}$ -->
-      <g style="fill: #1a1a1a" transform="translate(40.88625 182.05804) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(40.88625 182.05804)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-32" d="M 2874 1114 
 L 2714 1114 
@@ -491,7 +491,7 @@ z
      </g>
      <g id="text_3">
       <!-- $\mathdefault{400}$ -->
-      <g style="fill: #1a1a1a" transform="translate(40.88625 132.570605) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(40.88625 132.570605)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-34" d="M 3014 1056 
 L 3014 1254 
@@ -535,7 +535,7 @@ z
      </g>
      <g id="text_4">
       <!-- $\mathdefault{600}$ -->
-      <g style="fill: #1a1a1a" transform="translate(40.88625 83.08317) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(40.88625 83.08317)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-36" d="M 2925 1306 
 C 2925 2118 2355 2733 1645 2733 
@@ -576,7 +576,7 @@ z
      </g>
      <g id="text_5">
       <!-- $\mathdefault{800}$ -->
-      <g style="fill: #1a1a1a" transform="translate(40.88625 33.595735) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(40.88625 33.595735)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-38" d="M 2925 1075 
 C 2925 1306 2854 1594 2611 1862 
@@ -703,7 +703,7 @@ L 3 0
     </g>
     <g id="text_6">
      <!-- Entries -->
-     <g style="fill: #1a1a1a" transform="translate(19.693125 151.402382) rotate(-90) scale(0.18 -0.18)">
+     <g style="fill: #1a1a1a" transform="translate(19.693125 151.402382)rotate(-90)scale(0.18 -0.18)">
       <defs>
        <path id="LatinModernMath-Regular-45" d="M 4173 1651 
 L 4013 1651 
@@ -888,7 +888,7 @@ z
    </g>
    <g id="text_7">
     <!-- Comparison of two hist with difference plot -->
-    <g style="fill: #1a1a1a" transform="translate(68.38625 15.66) scale(0.12 -0.12)">
+    <g style="fill: #1a1a1a" transform="translate(68.38625 15.66)scale(0.12 -0.12)">
      <defs>
       <path id="LatinModernMath-Regular-43" d="M 4256 1491 
 C 4256 1555 4256 1600 4173 1600 
@@ -1233,7 +1233,7 @@ z
     </g>
     <g id="text_8">
      <!-- $\mathcal{C}_{2}$ -->
-     <g style="fill: #1a1a1a" transform="translate(381.46625 39.251634) scale(0.12 -0.12)">
+     <g style="fill: #1a1a1a" transform="translate(381.46625 39.251634)scale(0.12 -0.12)">
       <defs>
        <path id="Cmsy10-43" d="M 1259 -153 
 Q 956 -153 732 -36 
@@ -1280,7 +1280,7 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cmsy10-43" transform="translate(0 0.484375)"/>
-      <use xlink:href="#LatinModernMath-Regular-32" transform="translate(53.342031 -12.44375) scale(0.7)"/>
+      <use xlink:href="#LatinModernMath-Regular-32" transform="translate(53.342031 -12.44375)scale(0.7)"/>
      </g>
     </g>
     <g id="patch_10">
@@ -1294,7 +1294,7 @@ z
     </g>
     <g id="text_9">
      <!-- $\mathcal{C}_{3}$ -->
-     <g style="fill: #1a1a1a" transform="translate(381.46625 55.980384) scale(0.12 -0.12)">
+     <g style="fill: #1a1a1a" transform="translate(381.46625 55.980384)scale(0.12 -0.12)">
       <defs>
        <path id="LatinModernMath-Regular-33" d="M 2925 1094 
 C 2925 1619 2522 2118 1856 2253 
@@ -1324,7 +1324,7 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cmsy10-43" transform="translate(0 0.484375)"/>
-      <use xlink:href="#LatinModernMath-Regular-33" transform="translate(53.342031 -12.44375) scale(0.7)"/>
+      <use xlink:href="#LatinModernMath-Regular-33" transform="translate(53.342031 -12.44375)scale(0.7)"/>
      </g>
     </g>
    </g>
@@ -1591,7 +1591,7 @@ L 403.18625 245.679541
      </g>
      <g id="text_10">
       <!-- $\mathdefault{−5}$ -->
-      <g style="fill: #1a1a1a" transform="translate(108.356277 315.662571) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(108.356277 315.662571)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-2212" d="M 4621 1600 
 C 4621 1670 4563 1728 4493 1728 
@@ -1645,7 +1645,7 @@ z
      </g>
      <g id="text_11">
       <!-- $\mathdefault{0}$ -->
-      <g style="fill: #1a1a1a" transform="translate(207.292885 315.662571) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(207.292885 315.662571)scale(0.15 -0.15)">
        <use xlink:href="#LatinModernMath-Regular-30" transform="translate(0 0.40625)"/>
       </g>
      </g>
@@ -1658,7 +1658,7 @@ z
      </g>
      <g id="text_12">
       <!-- $\mathdefault{5}$ -->
-      <g style="fill: #1a1a1a" transform="translate(300.379492 315.662571) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(300.379492 315.662571)scale(0.15 -0.15)">
        <use xlink:href="#LatinModernMath-Regular-35" transform="translate(0 0.40625)"/>
       </g>
      </g>
@@ -1671,7 +1671,7 @@ z
      </g>
      <g id="text_13">
       <!-- $\mathdefault{10}$ -->
-      <g style="fill: #1a1a1a" transform="translate(389.716099 315.662571) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(389.716099 315.662571)scale(0.15 -0.15)">
        <defs>
         <path id="LatinModernMath-Regular-31" d="M 2682 0 
 L 2682 198 
@@ -1796,7 +1796,7 @@ z
     </g>
     <g id="text_14">
      <!-- variable_1 -->
-     <g style="fill: #1a1a1a" transform="translate(197.006094 337.066634) scale(0.18 -0.18)">
+     <g style="fill: #1a1a1a" transform="translate(197.006094 337.066634)scale(0.18 -0.18)">
       <defs>
        <path id="LatinModernMath-Regular-76" d="M 3251 2560 
 L 3251 2758 
@@ -1876,7 +1876,7 @@ z
      </g>
      <g id="text_15">
       <!-- $\mathdefault{−250}$ -->
-      <g style="fill: #1a1a1a" transform="translate(29.18625 296.316684) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(29.18625 296.316684)scale(0.15 -0.15)">
        <use xlink:href="#LatinModernMath-Regular-2212" transform="translate(0 0.40625)"/>
        <use xlink:href="#LatinModernMath-Regular-32" transform="translate(77.799988 0.40625)"/>
        <use xlink:href="#LatinModernMath-Regular-35" transform="translate(127.799973 0.40625)"/>
@@ -1892,7 +1892,7 @@ z
      </g>
      <g id="text_16">
       <!-- $\mathdefault{0}$ -->
-      <g style="fill: #1a1a1a" transform="translate(55.88625 277.950747) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(55.88625 277.950747)scale(0.15 -0.15)">
        <use xlink:href="#LatinModernMath-Regular-30" transform="translate(0 0.40625)"/>
       </g>
      </g>
@@ -1905,7 +1905,7 @@ z
      </g>
      <g id="text_17">
       <!-- $\mathdefault{250}$ -->
-      <g style="fill: #1a1a1a" transform="translate(40.88625 259.584811) scale(0.15 -0.15)">
+      <g style="fill: #1a1a1a" transform="translate(40.88625 259.584811)scale(0.15 -0.15)">
        <use xlink:href="#LatinModernMath-Regular-32" transform="translate(0 0.40625)"/>
        <use xlink:href="#LatinModernMath-Regular-35" transform="translate(49.999985 0.40625)"/>
        <use xlink:href="#LatinModernMath-Regular-30" transform="translate(99.999969 0.40625)"/>
@@ -1991,18 +1991,27 @@ z
     </g>
     <g id="text_18">
      <!-- $\mathcal{C}_{2} - \mathcal{C}_{3}$ -->
-     <g style="fill: #1a1a1a" transform="translate(19.693125 297.925587) rotate(-90) scale(0.18 -0.18)">
+     <g style="fill: #1a1a1a" transform="translate(19.693125 293.785587)rotate(-90)scale(0.18 -0.18)">
+      <defs>
+       <path id="LatinModernMath-Regular-2d" d="M 1766 1197 
+L 1766 1568 
+L 70 1568 
+L 70 1197 
+L 1766 1197 
+z
+" transform="scale(0.015625)"/>
+      </defs>
       <use xlink:href="#Cmsy10-43" transform="translate(0 0.484375)"/>
-      <use xlink:href="#LatinModernMath-Regular-32" transform="translate(53.342031 -12.44375) scale(0.7)"/>
-      <use xlink:href="#LatinModernMath-Regular-2212" transform="translate(108.055302 0.484375)"/>
-      <use xlink:href="#Cmsy10-43" transform="translate(203.413883 0.484375)"/>
-      <use xlink:href="#LatinModernMath-Regular-33" transform="translate(256.755915 -12.44375) scale(0.7)"/>
+      <use xlink:href="#LatinModernMath-Regular-32" transform="translate(53.342031 -12.44375)scale(0.7)"/>
+      <use xlink:href="#LatinModernMath-Regular-2d" transform="translate(107.156706 0.484375)"/>
+      <use xlink:href="#Cmsy10-43" transform="translate(157.116691 0.484375)"/>
+      <use xlink:href="#LatinModernMath-Regular-33" transform="translate(210.458722 -12.44375)scale(0.7)"/>
      </g>
     </g>
    </g>
    <g id="text_19">
     <!-- Difference ax -->
-    <g style="fill: #1a1a1a" transform="translate(334.32875 242.83507) scale(0.12 -0.12)">
+    <g style="fill: #1a1a1a" transform="translate(334.32875 242.83507)scale(0.12 -0.12)">
      <defs>
       <path id="LatinModernMath-Regular-44" d="M 4525 2150 
 C 4525 3366 3661 4371 2566 4371 
