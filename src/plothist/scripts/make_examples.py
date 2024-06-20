@@ -34,6 +34,10 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         )
         return 1
 
+    # print matplotlib version
+    import matplotlib
+    print(f"Matplotlib version: {matplotlib.__version__}")
+
     plothist_folder = (
         plothist.__path__[0]
         if os.environ.get("PLOTHIST_PATH") is None
@@ -107,7 +111,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
 
     with open(plothist_folder + "/.svg_metadata.yaml", "r") as f:
         svg_metadata = yaml.safe_load(f)
-    svg_metadata["hashsalt"] = "8311311"
+
     svg_metadata = "metadata=" + str(svg_metadata)
 
     if check_svg:
