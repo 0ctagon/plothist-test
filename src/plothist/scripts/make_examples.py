@@ -116,6 +116,10 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         img_hashes = {}
         for file in os.listdir(img_folder):
             if file.endswith(".svg"):
+                if file == "1d_hist_simple.svg":
+                    print("\n\n\n\n\nBEFORE CHANGE cat   1d_hist_simple")
+                    subprocess.run(["cat", os.path.join(img_folder, file)])
+                    print("\n\n\n\n\n")
                 with open(os.path.join(img_folder, file), "r") as f:
                     img_hashes[file] = hashlib.sha256(f.read().encode()).hexdigest()
 
@@ -157,6 +161,10 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
     # Move the svg files to the img folder
     for file in os.listdir(temp_img_folder):
         if file.endswith(".svg"):
+            if file == "1d_hist_simple.svg":
+                print("\n\n\n\n\AFTER CHANGE cat   1d_hist_simple")
+                subprocess.run(["cat", os.path.join(temp_img_folder, file)])
+                print("\n\n\n\n\n")
             subprocess.run(["mv", os.path.join(temp_img_folder, file), img_folder])
 
     # Remove the temp folder
@@ -178,7 +186,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         if changed_img:
             changed_img.sort()
             fail(
-                f"The following images in the doc have changed [{len(changed_img)} out of {len(img_hashes)}]:\n{', '.join(changed_img)}.\nPlease run `plothist_make_examples`, check the new images and commit them if they are correct.\n\nThe following images haven't changed:\n{', '.join(set(img_hashes.keys()) - set(changed_img))}\n\nHere is a print of the svg metadata:\n{svg_metadata}"
+                f"The following images in the doc have changed [{len(changed_img)} out of {len(img_hashes)}]:\n{', '.join(changed_img)}.\nPlease run `plothist_make_examples`, check the new images and commit them if they are correct.\n\nThe following images haven't changed:\n{', '.join(set(img_hashes.keys()) - set(changed_img))}"
             )
         if len(new_img_hashes) != len(img_hashes):
             fail(
