@@ -34,6 +34,10 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         )
         return 1
 
+    # print matplotlib version
+    import matplotlib
+    print(f"Matplotlib version: {matplotlib.__version__}")
+
     plothist_folder = (
         plothist.__path__[0]
         if os.environ.get("PLOTHIST_PATH") is None
@@ -178,7 +182,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         if changed_img:
             changed_img.sort()
             fail(
-                f"The following images in the doc have changed [{len(changed_img)} out of {len(img_hashes)}]:\n{', '.join(changed_img)}.\nPlease run `plothist_make_examples`, check the new images and commit them if they are correct."
+                f"The following images in the doc have changed [{len(changed_img)} out of {len(img_hashes)}]:\n{', '.join(changed_img)}.\nPlease run `plothist_make_examples`, check the new images and commit them if they are correct.\n\nThe following images haven't changed:\n{', '.join(set(img_hashes.keys()) - set(changed_img))}"
             )
         if len(new_img_hashes) != len(img_hashes):
             fail(
