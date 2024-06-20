@@ -107,7 +107,7 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
 
     with open(plothist_folder + "/.svg_metadata.yaml", "r") as f:
         svg_metadata = yaml.safe_load(f)
-
+    svg_metadata["hashsalt"] = "8311311"
     svg_metadata = "metadata=" + str(svg_metadata)
 
     if check_svg:
@@ -116,10 +116,6 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
         img_hashes = {}
         for file in os.listdir(img_folder):
             if file.endswith(".svg"):
-                if file == "1d_hist_simple.svg":
-                    print("\n\n\n\n\nBEFORE CHANGE cat   1d_hist_simple")
-                    subprocess.run(["cat", os.path.join(img_folder, file)])
-                    print("\n\n\n\n\n")
                 with open(os.path.join(img_folder, file), "r") as f:
                     img_hashes[file] = hashlib.sha256(f.read().encode()).hexdigest()
 
@@ -161,10 +157,6 @@ def make_examples(no_input=False, check_svg=False, print_code=False):
     # Move the svg files to the img folder
     for file in os.listdir(temp_img_folder):
         if file.endswith(".svg"):
-            if file == "1d_hist_simple.svg":
-                print("\n\n\n\n\AFTER CHANGE cat   1d_hist_simple")
-                subprocess.run(["cat", os.path.join(temp_img_folder, file)])
-                print("\n\n\n\n\n")
             subprocess.run(["mv", os.path.join(temp_img_folder, file), img_folder])
 
     # Remove the temp folder
